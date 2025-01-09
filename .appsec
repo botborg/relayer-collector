@@ -1,0 +1,183 @@
+{
+  "version": "1.4.0",
+  "plugins_used": [
+    {
+      "name": "ArtifactoryDetector"
+    },
+    {
+      "name": "AWSKeyDetector"
+    },
+    {
+      "name": "AzureStorageKeyDetector"
+    },
+    {
+      "name": "Base64HighEntropyString",
+      "limit": 4.5
+    },
+    {
+      "name": "BasicAuthDetector"
+    },
+    {
+      "name": "CloudantDetector"
+    },
+    {
+      "name": "DiscordBotTokenDetector"
+    },
+    {
+      "name": "GitHubTokenDetector"
+    },
+    {
+      "name": "HexHighEntropyString",
+      "limit": 3.0
+    },
+    {
+      "name": "IbmCloudIamDetector"
+    },
+    {
+      "name": "IbmCosHmacDetector"
+    },
+    {
+      "name": "JwtTokenDetector"
+    },
+    {
+      "name": "KeywordDetector",
+      "keyword_exclude": ""
+    },
+    {
+      "name": "MailchimpDetector"
+    },
+    {
+      "name": "NpmDetector"
+    },
+    {
+      "name": "PrivateKeyDetector"
+    },
+    {
+      "name": "SendGridDetector"
+    },
+    {
+      "name": "SlackDetector"
+    },
+    {
+      "name": "SoftlayerDetector"
+    },
+    {
+      "name": "SquareOAuthDetector"
+    },
+    {
+      "name": "StripeDetector"
+    },
+    {
+      "name": "TwilioKeyDetector"
+    }
+  ],
+  "filters_used": [
+    {
+      "path": "detect_secrets.filters.allowlist.is_line_allowlisted"
+    },
+    {
+      "path": "detect_secrets.filters.common.is_baseline_file",
+      "filename": ".appsec/secrets.baseline"
+    },
+    {
+      "path": "detect_secrets.filters.common.is_ignored_due_to_verification_policies",
+      "min_level": 2
+    },
+    {
+      "path": "detect_secrets.filters.heuristic.is_indirect_reference"
+    },
+    {
+      "path": "detect_secrets.filters.heuristic.is_likely_id_string"
+    },
+    {
+      "path": "detect_secrets.filters.heuristic.is_lock_file"
+    },
+    {
+      "path": "detect_secrets.filters.heuristic.is_not_alphanumeric_string"
+    },
+    {
+      "path": "detect_secrets.filters.heuristic.is_potential_uuid"
+    },
+    {
+      "path": "detect_secrets.filters.heuristic.is_prefixed_with_dollar_sign"
+    },
+    {
+      "path": "detect_secrets.filters.heuristic.is_sequential_string"
+    },
+    {
+      "path": "detect_secrets.filters.heuristic.is_swagger_file"
+    },
+    {
+      "path": "detect_secrets.filters.heuristic.is_templated_secret"
+    },
+    {
+      "path": "detect_secrets.filters.regex.should_exclude_file",
+      "pattern": [
+        ".appsec/secrets.baseline"
+      ]
+    }
+  ],
+  "results": {
+    "archiverConfig.json": [
+      {
+        "type": "Hex High Entropy String",
+        "filename": "archiverConfig.json",
+        "hashed_secret": "e8dd89a50006645fd917ecdcbf71cb756f1eb426",
+        "is_verified": false,
+        "line_number": 6,
+        "is_secret": false
+      }
+    ],
+    "src/aggregator.ts": [
+      {
+        "type": "Hex High Entropy String",
+        "filename": "src/aggregator.ts",
+        "hashed_secret": "325391ecdd6821dce627c5fa83042de9f43c4d26",
+        "is_verified": false,
+        "line_number": 13,
+        "is_secret": false
+      }
+    ],
+    "src/collector.ts": [
+      {
+        "type": "Hex High Entropy String",
+        "filename": "src/collector.ts",
+        "hashed_secret": "325391ecdd6821dce627c5fa83042de9f43c4d26",
+        "is_verified": false,
+        "line_number": 24,
+        "is_secret": false
+      }
+    ],
+    "src/config/index.ts": [
+      {
+        "type": "Hex High Entropy String",
+        "filename": "src/config/index.ts",
+        "hashed_secret": "e8dd89a50006645fd917ecdcbf71cb756f1eb426",
+        "is_verified": false,
+        "line_number": 21,
+        "is_secret": false
+      }
+    ],
+    "src/data_patcher.ts": [
+      {
+        "type": "Hex High Entropy String",
+        "filename": "src/data_patcher.ts",
+        "hashed_secret": "325391ecdd6821dce627c5fa83042de9f43c4d26",
+        "is_verified": false,
+        "line_number": 10,
+        "is_secret": false
+      }
+    ],
+    "src/server.ts": [
+      {
+        "type": "Hex High Entropy String",
+        "filename": "src/server.ts",
+        "hashed_secret": "325391ecdd6821dce627c5fa83042de9f43c4d26",
+        "is_verified": false,
+        "line_number": 55,
+        "is_secret": false
+      }
+    ]
+  },
+  "generated_at": "2023-12-27T20:21:18Z"
+}
